@@ -1,0 +1,144 @@
+@import "../../App.scss";
+
+.navbar {
+  padding: 12px 0;
+  background: linear-gradient(90deg, #1e40af 0%, #2563eb 100%);
+  box-shadow: none;
+  border-radius: 0;
+
+  .navbar-brand {
+    font-size: 2.4rem;
+    color: #fff;
+    letter-spacing: 1px;
+
+    .navbar-brand-ico {
+      color: #fff;
+      font-size: 2.2rem;
+    }
+
+    .navbar-brand-txt {
+      color: #fff;
+      font-weight: 800;
+    }
+  }
+
+  .brand-and-toggler {
+    .sidebar-show-btn {
+      margin-right: 12px;
+      margin-top: 4px;
+      transition: $transition-ease;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+
+  .navbar-collapse {
+    .navbar-search {
+      padding: 4px;
+      margin-left: 32px;
+      border-radius: 8px;
+      background: #f1f5fe;
+
+      .form-control {
+        width: 100%;
+        padding: 0 16px;
+        color: #1e293b;
+        background: transparent;
+        caret-color: $clr-orange;
+
+        &::placeholder {
+          font-size: 13.5px;
+          font-family: $font-family-manrope;
+          letter-spacing: 0.5px;
+        }
+      }
+
+      .search-btn {
+        background: #2563eb;
+        color: #fff;
+        width: 60px;
+        height: 32px;
+        border-radius: 8px;
+        transition: $transition-ease;
+
+        &:hover {
+          background: #1e40af;
+        }
+      }
+
+      @media screen and (max-width: 576px) {
+        display: none;
+      }
+    }
+
+    .navbar-nav {
+      margin-left: 32px;
+      margin-top: 8px;
+
+      .nav-item {
+        margin-right: 16px;
+
+        .nav-link {
+          color: #fff;
+          font-weight: 600;
+
+          &:hover {
+            color: #ffe066;
+          }
+        }
+      }
+
+      @media screen and (max-width: 992px) {
+        display: none;
+      }
+    }
+  }
+
+  .navbar-cart {
+    margin-left: 32px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+
+    .cart-btn {
+      background: #fff;
+      color: #2563eb;
+      border-radius: 8px;
+      padding: 8px 16px;
+      min-width: 48px;
+      min-height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      font-size: 2rem;
+      box-shadow: none;
+      transition: $transition-ease;
+
+      &:hover {
+        background: #2563eb;
+        color: #fff;
+      }
+
+      .cart-items-value {
+        position: absolute;
+        top: -8px;
+        right: -8px;
+        background: #2563eb;
+        color: #fff;
+        font-size: 13px;
+        font-weight: 700;
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 1px 4px rgba(30,144,255,0.12);
+        border: 2px solid #fff;
+      }
+    }
+  }
+}
