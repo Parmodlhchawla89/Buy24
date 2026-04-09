@@ -14,7 +14,7 @@ const Footer = () => {
           <Link to = "/" className='text'>ABOUT Buy24.</Link>
         </div>
         <span className='text-white copyright-text text-manrope fs-14 fw-3'>&copy; 2026 Buy24. All Rights Reserved.</span>
-        <span className='text-white copyright-text text-manrope fs-14 fw-3'>GUID: 6a1aefe8-60e3-4f03-88f1-7a5ea1f2b130</span>
+        <span className='text-white copyright-text text-manrope fs-14 fw-3'>GUID: 62866688-5a9c-494d-9429-0cd4a9ba1b8b</span>
       </div>
     </footer>
   )
