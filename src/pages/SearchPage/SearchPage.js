@@ -18,6 +18,10 @@ const SearchPage = () => {
     dispatch(fetchAsyncSearchProduct(searchTerm));
   }, [searchTerm]);
 
+  if(searchProductsStatus === STATUS.LOADING) {
+    return <Loader />;
+  }
+
   if(searchProducts.length === 0){
     return (
       <div className='container' style = {{
